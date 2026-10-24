@@ -1,0 +1,17 @@
+database:
+  host: "192.168.1.44"
+  port: 5432
+  dbname: "JKC_Input"
+  schema: "HANA_P3"  # Unified superset containing all records from HANA_P2 and HANA_P3
+  fallback_schema: "HANA_P2"
+  username: "postgres"
+  password: "postgres"
+
+query:
+  default_limit: null  # null / 0 removes the limit to use all data across the server
+  excel_export_limit: 100000  # Safe Excel workbook capacity (all rows saved to CSV)
+
+model:
+  n_models: 5
+  test_size: 0.20
+  random_state: 42

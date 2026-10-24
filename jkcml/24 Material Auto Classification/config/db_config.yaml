@@ -1,0 +1,18 @@
+# Database Configuration for SAP HANA / PostgreSQL Mirror - Use Case 24: Material Auto Classification (NLP)
+database:
+  host: "192.168.1.44"
+  port: 5432
+  dbname: "JKC_Input"
+  schemas:
+    - "HANA_P2"
+    - "HANA_P3"
+  schema: "HANA_P2"
+  user: "postgres"
+  password: "postgres"
+
+ml_parameters:
+  n_clusters: 4
+  contamination: 0.22
+  random_state: 42
+  test_size: 0.20
+  sample_size: null  # No row limit - use all records across HANA_P2 and HANA_P3

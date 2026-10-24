@@ -1,0 +1,17 @@
+# Database Configuration for SAP HANA / PostgreSQL Mirror
+database:
+  host: "192.168.1.44"
+  port: 5432
+  dbname: "JKC_Input"
+  schema: "HANA_P2"
+  schemas:
+    - "HANA_P2"
+    - "HANA_P3"
+  user: "postgres"
+  password: "postgres"
+
+ml_parameters:
+  contamination: 0.05
+  random_state: 42
+  test_size: 0.20
+  sample_size: null  # No limit - extract and score ALL data from server

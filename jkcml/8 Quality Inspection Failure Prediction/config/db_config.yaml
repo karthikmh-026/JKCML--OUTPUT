@@ -1,0 +1,17 @@
+database:
+  host: "192.168.1.44"
+  port: 5432
+  dbname: "JKC_Input"
+  schemas:
+    - "HANA_P3"
+    - "HANA_P2"
+  user: "postgres"
+  password: "postgres"
+
+app:
+  name: "Quality Inspection Failure Prediction & Classification"
+  use_case_id: 8
+  version: "2.0.0"
+  random_seed: 42
+  sample_size: null
+  contamination: 0.05

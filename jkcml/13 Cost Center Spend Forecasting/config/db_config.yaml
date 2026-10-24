@@ -1,0 +1,16 @@
+# Database Configuration for SAP HANA / PostgreSQL Mirror - Use Case 13: Cost Center Spend Forecasting (Time Series)
+database:
+  host: "192.168.1.44"
+  port: 5432
+  dbname: "JKC_Input"
+  schema: "HANA_P3"
+  user: "postgres"
+  password: "postgres"
+
+time_series_parameters:
+  train_year: 2025
+  forecast_year: 2026
+  target_column: "actual_spend_inr"
+  sample_size_per_month_2025: 1600
+  sample_size_per_month_2026: 1600
+  random_state: 42

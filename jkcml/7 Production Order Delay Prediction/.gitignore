@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+data/cache/*
+!data/cache/.gitkeep
+models/*.joblib
+reports/figures/*.png
+*.xlsx
